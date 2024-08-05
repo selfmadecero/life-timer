@@ -205,3 +205,22 @@ strong {
         height: 60px;
     }
 }
+
+/* 기존 CSS 코드는 그대로 유지하고 다음 스타일을 추가합니다 */
+
+.lang-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #27ae60;
+}
