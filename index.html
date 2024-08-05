@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,21 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>라이프타임: 당신의 인생시계</h1>
+        <button id="language-toggle" class="lang-btn">English</button>
+        <h1 data-lang="title">라이프타임: 당신의 인생시계</h1>
         <div id="input-form">
-            <label for="age">현재 나이:</label>
+            <label for="age" data-lang="age">현재 나이:</label>
             <input type="number" id="age" placeholder="예: 30" min="0" max="120">
             
-            <label for="life-expectancy">예상 수명:</label>
+            <label for="life-expectancy" data-lang="lifeExpectancy">예상 수명:</label>
             <input type="number" id="life-expectancy" placeholder="예: 80" min="0" max="120">
             
-            <label for="sleep-time">어제 취침 시간:</label>
+            <label for="sleep-time" data-lang="sleepTime">어제 취침 시간:</label>
             <input type="time" id="sleep-time">
             
-            <label for="wake-time">오늘 기상 시간:</label>
+            <label for="wake-time" data-lang="wakeTime">오늘 기상 시간:</label>
             <input type="time" id="wake-time">
             
-            <button id="calculate">계산하기</button>
+            <button id="calculate" data-lang="calculate">계산하기</button>
         </div>
         <div id="result" style="display: none;">
             <div id="life-clock">
