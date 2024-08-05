@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라이프타임: 당신의 인생시계</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>라이프타임: 당신의 인생시계</h1>
+        <div id="input-form">
+            <label for="age">현재 나이:</label>
+            <input type="number" id="age" placeholder="예: 30" min="0" max="120">
+            
+            <label for="life-expectancy">예상 수명:</label>
+            <input type="number" id="life-expectancy" placeholder="예: 80" min="0" max="120">
+            
+            <label for="sleep-time">어제 취침 시간:</label>
+            <input type="time" id="sleep-time">
+            
+            <label for="wake-time">오늘 기상 시간:</label>
+            <input type="time" id="wake-time">
+            
+            <button id="calculate">계산하기</button>
+        </div>
+        <div id="result" style="display: none;">
+            <div id="life-clock">
+                <div id="hour-hand"></div>
+                <div id="minute-hand"></div>
+                <div id="second-hand"></div>
+                <div id="ampm-indicator"></div>
+                <div id="clock-face"></div>
+            </div>
+            <div id="life-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
